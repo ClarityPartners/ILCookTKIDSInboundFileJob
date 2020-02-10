@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package name="ILCookTKIDSInboundFileJob-DB" version="1.0.0.0" xmlns:atlas="atlas">
+  <atlas:job id="1e32a7cf-282f-43bf-a26f-310e98269050"
+             word="ILCookTKIDS"
+             desc="ILCookTKIDSInboundJob"
+             priority="1"
+             restartable="1"
+             systemjob="1"
+             productid="2"
+             registerdir="true">
+    <jobtask jobtaskid="a0f28b13-311e-4e2a-b323-748ce244d29d"
+                   word="ILCookTKIDS"
+                   desc="ILCookTKIDSInboundFileJob"
+                   jobtaskcategorykey="DATA"
+                   programid="ILCookTKIDSInboundFileJob.JobTask"
+                   parametersurl="/CustomExtensions/Infrastructure/JobProcessing/ParamModals/ILCookTKIDSInboundFile.htm"
+                   parameterswidth="480"
+                   parametersheight="160"
+                   publicaccess="true"
+                   taskorder="1"
+                   successnextactionkey="E"
+                   failurenextactionkey="E"
+                   registerdir="true"/>
+  </atlas:job>
+</package>

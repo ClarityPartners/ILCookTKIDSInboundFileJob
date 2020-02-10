@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package name="ILCookTKIDSInboundFileJob-APP" version="1.0.0.0" priority="32000" xmlns:com="com" xmlns:gac="gac" xmlns:iis="iis" xmlns:atlas="atlas">
+  <script>
+    ComponentRegistrar.UninstallAssembly("ILCookTKIDSInboundFileJob.dll", "");
+  </script>
+  <!-- Deploy .dll to server -->
+  <com:server>
+    <asset source="Binary\ILCookTKIDSInboundFileJob.dll"
+           target="\CustomExtensions\Binary\JobProcessing\ILCookTKIDSInboundFileJob.dll"
+           name="ILCookTKIDSInboundFileJob"
+           version="1.0.0.0"/>
+  </com:server>
+
+  <!-- Web Files -->
+  <asset source="Webs\ILCookTKIDSInboundFile.htm"
+         target="\CustomExtensions\Webs\Infrastructure\JobProcessing\ParamModals\ILCookTKIDSInboundFile.htm"
+         name="ILCookTKIDSInboundFile"
+         version="1.0.0.0"/>
+</package>
